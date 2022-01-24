@@ -1,5 +1,5 @@
 <?php 
-function relative_time($format, $post_id) {
+function relative_time( $post_id ) {
     $d1 = new \DateTime(get_the_date('c', $post_id));
     $d2 = new \DateTime(current_time('c'));
     $diff = $d2->diff($d1);
